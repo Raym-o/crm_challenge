@@ -1,0 +1,7 @@
+<% if @customers.empty? %>
+ <p class="subtitle is-5">There are no customers available to preview.</p>
+<% else %>
+  <div class="columns is-multiline">
+    <%= render @customers %>
+  </div>
+<% end %>
