@@ -34,3 +34,6 @@
 /yarn-error.log
 yarn-debug.log*
 .yarn-integrity
+
+# Ignore contents of the assets/images folder
+app/assets/images
