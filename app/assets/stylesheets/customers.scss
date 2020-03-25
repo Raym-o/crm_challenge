@@ -1,3 +1,56 @@
 // Place all the styles related to the customers controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+div.links{
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
+div.bottom{
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 10em;
+}
+
+div.card{
+  position: relative;
+  padding: 1em;
+  background-image: linear-gradient(to bottom right, lightgray, white);
+  display: block;
+  border-color: black;
+  border-style: solid;
+  border-radius: 3px;
+  border-width: 1px;
+  height: 35em;
+  margin-left: 0.5rem;
+
+}
+
+div.is-full{
+  position: absolute;
+  width:35em;
+}
+
+p.title{
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: large;
+}
+
+figure.image{
+  border-radius: 20px;
+  height: 10em;
+}
+
+span.has-text-weight-semibold{
+  font-weight: bold;
+}
+
+footer.card-footer{
+  position: absolute;
+  top: 70%;
+  bottom: 3rem;
+
+}

@@ -1,8 +1,16 @@
 <div>
+   <div class="links">
+      <%= link_to ' all customers |', '/' %>
+      <%= link_to ' missing email |', customers_missing_email_path %>
+      <%= link_to ' alphabetized', customers_alphabetized_path %>
+    </div>
+  <br>
   <h2 class="subtitle is-2">Requested Customer</h2>
   <%= render @customer, params: {column_full: '', no_link: ''} %>
   <br>
-  <p>
-    <%= link_to '<- all customers', '/' %>
-  </p>
+   <div class="links bottom">
+      <%= link_to ' all customers |', '/' %>
+      <%= link_to ' missing email |', customers_missing_email_path %>
+      <%= link_to ' alphabetized', customers_alphabetized_path %>
+    </div>
 </div>

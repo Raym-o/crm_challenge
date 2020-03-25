@@ -1,9 +1,11 @@
 <div>
-  <div>
+  <div class="links">
         <%= link_to ' all customers |', '/' %>
 
         <%= link_to ' missing email', customers_missing_email_path %>
-      </div>
+  </div>
+  <br>
+  <h1 class="title is-2">Customers Alphabetized</h1>
   <% if @customers.empty? %>
   <p class="subtitle is-5">There are no customers available to preview.</p>
   <% else %>
@@ -11,7 +13,7 @@
       <%= render @customers %>
     </div>
   <% end %>
-  <div>
+  <div class="links bottom">
         <%= link_to ' all customers |', '/' %>
 
         <%= link_to ' missing email', customers_missing_email_path %>

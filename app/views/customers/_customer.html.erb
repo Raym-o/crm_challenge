@@ -13,17 +13,20 @@
       <% if customer.image.present? %>
         <div class="card-image">
           <figure class="image is-1by1">
-            <%= image_tag customer.image %>
+            <%= image_tag(customer.image, size: "150x200", alt: "mullet" ) %>
           </figure>
         </div>
       <% end %>
     </div>
     <footer class="card-footer">
       <p class="card-footer-item">
-        <span class="has-text-weight-semibold">Phone: <%= customer.phone_number %></span>
+        <span class="has-text-weight-semibold">Notes:</span> <%= customer.notes %>
       </p>
       <p class="card-footer-item">
-        <span class="has-text-weight-semibold">E-mail: <%= customer.email %></span>
+        <span class="has-text-weight-semibold">Phone:</span> <%= customer.phone_number %>
+      </p>
+      <p class="card-footer-item">
+        <span class="has-text-weight-semibold">E-mail:</span> <%= customer.email %>
       </p>
     </footer>
   </div>

@@ -1,17 +1,21 @@
 <div>
-        <%= link_to ' alphabetized |', customers_alphabetized_path %>
+  <div class="links">
+    <%= link_to ' alphabetized |', customers_alphabetized_path %>
 
-        <%= link_to ' missing email', customers_missing_email_path %>
+    <%= link_to ' missing email', customers_missing_email_path %>
   </div>
-<% if @customers.empty? %>
- <p class="subtitle is-5">There are no customers available to preview.</p>
-<% else %>
-  <div class="columns is-multiline">
-    <%= render @customers %>
-  </div>
-<% end %>
-<div>
-        <%= link_to ' alphabetized |', customers_alphabetized_path %>
+  <br>
+  <h1 class="title is-2">All Customers</h1>
+  <% if @customers.empty? %>
+  <p class="subtitle is-5">There are no customers available to preview.</p>
+  <% else %>
+    <div class="columns is-multiline">
+      <%= render @customers %>
+    </div>
+  <% end %>
+  <div class="links bottom">
+    <%= link_to ' alphabetized |', customers_alphabetized_path %>
 
-        <%= link_to ' missing email', customers_missing_email_path %>
+    <%= link_to ' missing email', customers_missing_email_path %>
   </div>
+</div>
