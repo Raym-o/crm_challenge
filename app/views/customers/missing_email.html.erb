@@ -1,0 +1,19 @@
+<div>
+  <% if @customers.empty? %>
+    <p class="subtitle is-5">There are no customers available to preview.</p>
+  <% else %>
+    <div>
+      <%= link_to ' all customers |', '/' %>
+
+      <%= link_to ' alphabetized', customers_alphabetized_path %>
+    </div>
+    <div class="columns is-multiline">
+      <%= render @customers %>
+    </div>
+    <div>
+      <%= link_to ' all customers |', '/' %>
+
+      <%= link_to ' alphabetized', customers_alphabetized_path %>
+    </div>
+  <% end %>
+</div>
