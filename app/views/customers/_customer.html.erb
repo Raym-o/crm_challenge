@@ -10,6 +10,13 @@
       <% else %>
         <p class="title"><%= customer.full_name %> </p>
       <% end %>
+      <% if customer.image.present? %>
+        <div class="card-image">
+          <figure class="image is-1by1">
+            <%= image_tag customer.image %>
+          </figure>
+        </div>
+      <% end %>
     </div>
     <footer class="card-footer">
       <p class="card-footer-item">
